@@ -1,0 +1,11 @@
+{
+  "name": "sonar-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "@sonar/scan": "^5.0.0",
+    "jest": "^30.0.0"
+  }
+}
