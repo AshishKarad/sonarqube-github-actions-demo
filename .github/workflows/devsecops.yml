@@ -33,3 +33,12 @@ jobs:
         with:
           name: application-sbom
           path: sbom.json
+
+      - name: Run Trivy filesystem scan
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: fs
+          scan-ref: .
+          format: table
+          exit-code: 0
+          severity: CRITICAL,HIGH      
